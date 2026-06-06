@@ -1,0 +1,87 @@
+
+img {   /*diminui o tamanho da imagem para que nao ultrapasse a coluna a que pertence*/
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+}
+
+
+.soda-button {  /*personaliza o botao*/
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #F50847, #000);
+    border: 1px solid #222;
+    cursor: pointer;
+}
+
+.soda-button:hover {
+    transform: scale(1.15);
+}
+
+.soda-button.selecionado {
+    background: #F50847; 
+    box-shadow: 0 0 15px #F50847; 
+}
+
+.soda-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.moeda {    /*estilizacao de cada moeda*/
+    width: 65px;
+    height: 65px;
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 22px;
+    font-family: sans-serif;
+    cursor: grab; 
+    margin-bottom: 20px;
+    user-select: none; 
+    box-shadow: 2px 4px 6px rgba(0,0,0,0.3), inset -2px -2px 6px rgba(0,0,0,0.2), inset 2px 2px 6px rgba(255,255,255,0.6);
+}
+
+.moeda-25 {
+    background: radial-gradient(circle, #e69c6d, #b8621b); 
+    border: 2px solid #7a3e0b;
+    color: #5c2b03;
+}
+
+.moeda-50 {
+    background: radial-gradient(circle, #f0f0f0, #a8a8a8);
+    border: 3px solid #7a7a7a; 
+    color: #333;
+}
+
+.moeda-100 {
+    background: radial-gradient(circle, #f0f0f0 45%, #d4af37 50%, #b8860b 100%);
+    border: 2px solid #8b6508;
+    color: #333;
+}
+
+.moeda:active {
+    cursor: grabbing;
+    transform: scale(0.95); 
+}
+/*estilizacao do visor para parecer digital*/
+#visor {
+    background-color: #222; 
+    color: #00ffcc; 
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid #555;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    font-weight: bold;
+    box-shadow: 0 0 10px #00ffcc;
+}
+
+/*so aumenta o tamanho basico do botao pra ficar mais bonitinho*/
+#buy {
+    transform: scale(1.5);
+}
